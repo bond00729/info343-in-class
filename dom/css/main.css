@@ -1,1 +1,9 @@
 /* put any app-specific style rules here */
+
+.sex-m {
+    background-color: dodgerblue;
+}
+
+.sex-f {
+    background-color: hotpink;
+}
