@@ -7,3 +7,7 @@
 .sex-f {
     background-color: hotpink;
 }
+
+th {
+    cursor: pointer;
+}
