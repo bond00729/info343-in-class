@@ -51,7 +51,7 @@ function render(data) {
     console.log(data);
     queryResults.innerHTML = "";
 
-    if (data.error || 0 == data.tacks.items.length) {
+    if (data.error) {
         renderError(data.error);
     } else {
         data.tracks.items.forEach(renderTrack);
