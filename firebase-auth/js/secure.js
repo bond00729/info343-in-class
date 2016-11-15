@@ -29,4 +29,8 @@ document.getElementById("sign-out-button").addEventListener("click", function() 
     //after the signout is complete, Firebase will call the
     //onAuthStateChanged callback function defined above
     firebase.auth().signOut();
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545

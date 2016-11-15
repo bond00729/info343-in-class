@@ -2,6 +2,7 @@
 //since this file is included in every HTML page, 
 //firebase will be consistently initialized for each
 //of your HTML pages
+<<<<<<< HEAD
 
   // Initialize Firebase
   var config = {
@@ -12,3 +13,5 @@
     messagingSenderId: "709780963506"
   };
   firebase.initializeApp(config);
+=======
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545

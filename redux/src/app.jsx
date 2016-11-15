@@ -4,7 +4,11 @@ import React from "react";
 import "./css/main.css";
 
 import {Link, IndexLink} from "react-router";
+<<<<<<< HEAD
 import {store} from "./shared-state.js"
+=======
+import {store} from "./shared-state.js";
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545
 
 export default class extends React.Component {
     constructor(props) {
@@ -16,7 +20,11 @@ export default class extends React.Component {
         this.unsub = store.subscribe(() => this.setState(store.getState()));
     }
 
+<<<<<<< HEAD
     comonentWillUnmount() {
+=======
+    componentWillUnmount() {
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545
         this.unsub();
     }
 

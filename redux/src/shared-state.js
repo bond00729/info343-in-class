@@ -12,10 +12,17 @@ const LS_KEY = "redux-store";
 
 function reducer(state, action) {
     switch(action.type) {
+<<<<<<< HEAD
         case ADD_FAV_ACTION: 
             return Object.assign({}, {favorites: state.favorites.concat(action.item)});
         case REMOVE_FAV_ACTION:
             return Object.assign({}, {favorites: state.favorites.filter(item => item.id != action.id)})
+=======
+        case ADD_FAV_ACTION:
+            return Object.assign({}, {favorites: state.favorites.concat(action.item)});
+        case REMOVE_FAV_ACTION:
+            return Object.assign({}, {favorites: state.favorites.filter(item => item.id != action.id)});
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545
         default:
             return state;
     }

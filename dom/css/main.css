@@ -1,11 +1,19 @@
 /* put any app-specific style rules here */
 
 .sex-m {
+<<<<<<< HEAD
     background-color: dodgerblue;
 }
 
 .sex-f {
     background-color: hotpink;
+=======
+    background-color: lightskyblue;
+}
+
+.sex-f {
+    background-color: pink;
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545
 }
 
 th {

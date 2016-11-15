@@ -45,10 +45,15 @@ var y = x;
 
 //now assign `y` the numeric value 10
 //what does x contain now? Write it to the console
+<<<<<<< HEAD
 
 y = 10;
 console.log("what is the value of x? ", x);
 
+=======
+y = 10;
+console.log("x is now:", x);
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545
 
 console.groupEnd();
 
@@ -81,19 +86,30 @@ console.group("PRACTICE: Strings");
 //with some text, and then create another string `s4`
 //and assign it the concatenation of `s2` and `s3`
 //then write it to the console so you can verify it worked.
+<<<<<<< HEAD
 
 var s2 = "Go Cardinals";
 var s3 = "Super Bowl or bust";
 var s4 = s2 + " " + s3;
+=======
+var s2 = "Hello";
+var s3 = "World";
+var s4 = s2+s3;
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545
 console.log(s4);
 
 //use the `.trim()` method to remove the leading and
 //trailing white space from this string
 var withSpaces = "    trim those spaces!     ";
+<<<<<<< HEAD
 console.log(withSpaces);
 var withoutSpaces = withSpaces.trim();
 console.log(withoutSpaces);
 
+=======
+var trimmedString = withSpaces.trim();
+console.log(trimmedString);
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545
 
 console.groupEnd();
 
@@ -148,7 +164,7 @@ course.teacher = {
 console.log("after adding property:", course);
 
 //you can remove properties using delete
-delete course.teacher;
+//delete course.teacher;
 console.log("after deleting property:", course);
 
 //you can test whether an object has a property using the
@@ -164,9 +180,13 @@ console.group("PRACTICE: Objects");
 //Create another object for one of your other courses
 //assigning it to a new variable named `course2`
 //use console.log() to view it in the browser console
+var course2 = {
+
+};
 
 //now try adding a property named `web site` (with a space)
 //setting it to some string value...it's tricky...
+<<<<<<< HEAD
 
 var course2 = {
     curriculum: "INFO",
@@ -178,6 +198,10 @@ var course2 = {
     awesome: true
 }
 console.log(course2);
+=======
+course2["web site"] = "http://....";
+console.log(course2["web site"]);
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545
 
 
 course2["web site"] = "uw.canvas.com"
@@ -219,14 +243,23 @@ console.group("PRACTICE: Arrays");
 //--PRACTICE--
 //create another array of playing card suits
 //(clubs, diamonds, hearts, spades)
+<<<<<<< HEAD
 
 var suits = ["clubs", "diamonds", "hearts", "spades"];
+=======
+var suits = ['clubs', 'diamonds', 'hearts', 'spades'];
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545
 
 //then add a new element named "jokers"
 //afer adding it, access it in the array
 //and log it to the console
+<<<<<<< HEAD
 
 suits.push("joker");
+=======
+suits.push("jokers");
+console.log(suits[suits.length - 1]);
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545
 
 var joker = suits[suits.length - 1];
 
@@ -314,6 +347,7 @@ console.groupCollapsed("Functions");
 function reverseString(s) {
     var reversed = "";
     var idx;
+    s = String(s);
     for (idx = s.length-1; idx >= 0; idx--) {
         //short form of reversed = reversed + s.charAt(idx)
         reversed += s.charAt(idx);
@@ -369,6 +403,7 @@ console.group("PRACTICE: Functions");
 //and returns the minimum of the two, or the first argument
 //if they are equal to each other. Then call it a few times
 //with various numbers to test it.
+<<<<<<< HEAD
 
 var minimum = function(num1, num2) {
     if (num1 > num2) {
@@ -383,6 +418,11 @@ var minimum = function(num1, num2) {
 console.log(minimum(1, 2));
 console.log(minimum(5, 2));
 console.log(minimum(2, 2));
+=======
+function minimum(n1, n2) {
+    return n2 < n1 ? n2 : n1;
+}
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545
 
 console.groupEnd();
 
@@ -457,7 +497,10 @@ function generateRandomNumbers(howMany, minimum, maximum) {
 }
 
 //>>> your code goes here!
+var ranNums = generateRandomNumbers(100);
+ranNums.forEach(logMe);
 
+<<<<<<< HEAD
 var randNums = generateRandomNumbers(50, 1, 100);
 var doubling = function(num) {
     return num * 2;
@@ -469,6 +512,13 @@ var min = newArray.reduce(minimum);
 console.log(min);
 
 
+=======
+var dblNums = ranNums.map(function(n) { return n*2; });
+console.log(ranNums, dblNums);
+
+var minNum = ranNums.reduce(minimum, ranNums[0]);
+console.log("The minimum is %d", minNum);
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545
 
 //now use the .sort() method on a generated array of random
 //numbers to sort them. Note that by default, sort will 
@@ -476,7 +526,11 @@ console.log(min);
 //you need to supply a comparator function that comapres them
 //as numbers.
 //see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-
+function compNums(n1, n2) {
+    return n1 - n2;
+}
+var sortedNums = ranNums.sort(compNums);
+console.log(sortedNums);
 
 
 console.groupEnd();

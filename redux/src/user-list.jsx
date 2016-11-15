@@ -9,7 +9,11 @@ import React from "react";
 import "whatwg-fetch";
 
 import UserCard from "./user-card.jsx";
+<<<<<<< HEAD
 import {store, addFavorite} from "./shared-state.js"
+=======
+import {store, addFavorite} from "./shared-state.js";
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545
 
 const GITHUB_USERS_API = "https://api.github.com/users";
 

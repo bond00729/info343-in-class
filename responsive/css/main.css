@@ -10,8 +10,13 @@ h1 {
 }
 
 header {
+<<<<<<< HEAD
     background-image: linear-gradient(to bottom, #FFF, #333);
     color: #FFFFFF;
+=======
+    background-image: linear-gradient(to bottom, #777, #555);
+    color: #FFF;
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545
 }
 
 .container {
@@ -20,8 +25,13 @@ header {
 }
 
 svg {
+<<<<<<< HEAD
     width: 75px;
     fill: saddlebrown;
+=======
+    width: 40px;
+    fill: #444;
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545
 }
 
 @media (min-width: 768px) {
@@ -30,7 +40,11 @@ svg {
         background-size: cover;
         background-position: center;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 8be6c5196175ccb9e732587d7a867491294a6545
     .row {
         display: flex;
     }
